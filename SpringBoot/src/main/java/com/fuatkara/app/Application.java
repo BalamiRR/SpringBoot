@@ -13,13 +13,18 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 	
+	//localhost:8080/index
 	@RequestMapping(value="/index")
 	public String Method() {
 		System.out.println("Method print!!");
 		return "Methods";
 	}
 
-	
+	@RequestMapping(value="/ms")
+	public String printT() {
+		System.out.println("Methods");
+		return "MethodSyso";
+	}
 	
 	
 	
